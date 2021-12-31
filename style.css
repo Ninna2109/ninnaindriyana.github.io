@@ -1,9 +1,18 @@
 .jumbotron {
   padding-top: 6rem;
-
+  padding-bottom: 5rem;
   background-color: #e2edff;
 }
 
 section {
   padding-top: 5rem;
+}
+
+footer {
+  background-color: #002366;
+  padding-top: 3rem;
+}
+
+nav {
+  background-color: #002366;
 }
