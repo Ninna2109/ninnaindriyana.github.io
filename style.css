@@ -1,7 +1,7 @@
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 5rem;
-  background-color: #e2edff;
+  background-color: #f5eedc;
 }
 
 section {
@@ -14,5 +14,22 @@ footer {
 }
 
 nav {
-  background-color: #002366;
+  padding-top: 20%;
+  background-color: #ffffff;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+#contact {
+  background-color: #f5eedc;
+}
+
+#gallery {
+  padding-bottom: 3rem;
 }
