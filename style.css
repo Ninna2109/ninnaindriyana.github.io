@@ -1,7 +1,7 @@
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 5rem;
-  background-color: #f5eedc;
+  background-color: #ffffff;
 }
 
 section {
@@ -9,13 +9,13 @@ section {
 }
 
 footer {
-  background-color: #002366;
+  background-color: #393e46;
   padding-top: 3rem;
 }
 
 nav {
   padding-top: 20%;
-  background-color: #002366;
+  background-color: #393e46;
 }
 
 .gallery-img {
@@ -27,9 +27,128 @@ nav {
 }
 
 #contact {
-  background-color: #f5eedc;
+  background-color: #ffffff;
 }
 
 #gallery {
   padding-bottom: 3rem;
+}
+
+.p1 {
+  font-size: 120px;
+  font-family: "Trirong", serif;
+  text-shadow: 3px 3px 4px #ababab;
+}
+
+.p2 {
+  font-family: "Trirong", serif;
+}
+
+#fire {
+  padding-bottom: 2em;
+}
+
+.social-link {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 10px;
+  bottom: 180px;
+}
+
+.social-link a {
+  text-decoration: none;
+  color: #04071b;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+/* Laptop Section */
+
+.laptop-box {
+  position: relative;
+  background-color: #393e46;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+  overflow: visible;
+}
+
+.laptop-box::before {
+  content: "MY";
+  position: absolute;
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.laptop-box:hover::before {
+  opacity: 0.5;
+}
+
+.laptop-box::after {
+  content: "Rocket";
+  position: absolute;
+  color: #ffffff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 350px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.laptop-box:hover::after {
+  opacity: 0.5;
+}
+
+.laptop-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.laptop-box:hover .laptop-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.laptop-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.laptop-box:hover .laptop-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.laptop-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 200px;
+  transition: 0.5s;
+}
+
+.laptop-box:hover .laptop-img {
+  transform: translate(-50%, -52%) rotate(-5deg) scale(1.2);
 }
